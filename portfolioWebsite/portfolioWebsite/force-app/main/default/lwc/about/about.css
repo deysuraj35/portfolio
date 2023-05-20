@@ -1,0 +1,95 @@
+.about{
+  padding: 80px;
+  color: #ababab;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3vw;
+}
+.col1{
+flex-basis: 35%;
+}
+
+.col1 img{
+  border-radius: 21px;
+  object-position: 25% 25%;
+  object-fit: cover;
+  width: 272px;
+}
+.col2{
+  flex-basis: 35%; 
+}
+.col2 h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: aliceblue;
+}
+.tabTitles{
+  display: flex;
+  margin: 20 px 0 40px;
+}
+.tabLinks{
+  margin-right:50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor:pointer;
+  position:relative;
+
+}
+
+.tabLinks::after {
+  transition: .3s;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(40deg, green, transparent);
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+}
+
+.tabLinks.activeLink::after {
+  width: 100%;
+}
+.tabContent ul li{
+  list-style: none;
+  margin: 10px 0;
+  list-style: none;
+    margin: 15px 2px;
+    padding: 9px;
+    position: relative;
+    border: 1px ;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.tabContent ul li span{
+  color: red;
+  font-size: 14px;
+}
+.tabContent ul {
+  list-style: none;
+    border-left: 2px solid #bababa;
+    padding: 0 8px
+
+    }
+
+.tabContent ul li:hover {
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+.tabContent ul li::before{
+  content: "";
+    position: absolute;
+    top: 16px;
+    width: 16px;
+    height: 16px;
+    right: calc(100% + 3px);
+    border-radius: 50%;
+    background-color: red;
+
+}
+

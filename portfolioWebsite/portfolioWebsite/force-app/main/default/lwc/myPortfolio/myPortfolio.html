@@ -1,0 +1,37 @@
+<template>
+    <div class="whole">
+<div class="body">
+ <div class="myImg">
+    <img src={myPortfolioImg}>
+</div>
+    <div class="container">
+        <nav>
+            <!-- <img class="logo" src={logo}> -->
+            <ul>
+                <template for:each={menus} for:item="menu">
+                <li key={menu.label}> <a href={section} onclick={scrollToSection} data-section={menu.label}> {menu.label} &nbsp; <lightning-icon icon-name={menu.value} size=x-small > </lightning-icon> </a></li>
+               </template>
+
+               
+            </ul>
+        </nav>
+    <div class="hme">  
+        <c-home-page > </c-home-page>
+        </div>
+    </div>
+    
+</div >
+<div class="abt" id="About">
+    <c-about about-user={aboutUser}></c-about>
+</div>
+<div class="srvc" id="Service">
+    <c-service></c-service>
+</div>
+
+<div class="cntc" id="Contact">
+    <c-contact about-user={aboutUser}></c-contact>
+</div>
+
+
+</div>
+</template>

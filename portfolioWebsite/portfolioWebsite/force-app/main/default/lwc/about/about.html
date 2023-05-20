@@ -1,0 +1,48 @@
+<template>
+  <div class="about">
+  <div class="container">
+   <div class="row">
+    <div class="col1">
+<img src={aboutUser}>
+    </div>
+    <div class="col2">
+      <h1>About Me</h1>
+      <p>this section contains all about me</p>
+      <div class="tabTitles">
+        <template for:each={aboutSecBtn} for:item="btn">
+          <div key={btn}>
+              <lightning-button  class="tabLinks activeLink" data={btn.value} variant="base" label={btn.value} onclick={handleClick}></lightning-button>
+          </div>
+        </template>
+      </div>
+      <div class="tabContent">
+        <template if:true={Skills}>
+        <ul >
+          <li ><span > UI/UX</span></br> Designing web interfaces </li>
+          <li><span> Web Development</span></br> Web developmet </li>
+          <li><span>Coding</span></br> Designing web interfaces </li>
+
+        </ul>
+      </template>
+      <template if:true={Experience}>
+        <ul>
+          <li><span > 1</span></br> CG </li>
+          <li><span> 2</span></br>Info</li>
+          <li><span>3</span></br>TCS  </li>
+
+        </ul>
+      </template>
+      <template if:true={Education}>
+        <ul>
+          <li><span > Btech</span></br> 9.0</li>
+          <li><span> Hs</span></br>79%</li>
+          <li><span>Mp</span></br> 86.86%</li>
+
+        </ul>
+      </template>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+</template>

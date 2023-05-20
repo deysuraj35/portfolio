@@ -1,0 +1,19 @@
+ .contactLeft{
+  flex-basis: 35%;
+ }
+ .contactLeft p{
+margin-top: 30px; 
+}
+
+/* .socialIcons a:hover{
+  color: azure;
+  transform: translate(-5px);
+} */
+
+
+ .contactRight{
+  flex-basis: 60%;
+ }
+ /* .subTitle{
+
+ } */

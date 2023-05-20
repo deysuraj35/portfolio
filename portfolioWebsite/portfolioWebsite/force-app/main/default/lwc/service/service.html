@@ -1,0 +1,18 @@
+<template>
+    <div class="container">
+        <h1 class="subTitle"> My Works</h1>
+        <div class="serviceList">
+                <template for:each={myWorks} for:item="work">
+                <div key={work.title}>
+                    <h2>{work.title}</h2>
+                <p class="slds-m-bottom-medium">{work.desc}</p>
+                <a class="  ac" href={work.link}><lightning-button-icon  icon-name="action:share_link"  size="small" alternative-text="Link"></lightning-button-icon></a>
+                </div>
+                </template>
+        </div>
+
+    </div>
+
+    
+    
+</template>

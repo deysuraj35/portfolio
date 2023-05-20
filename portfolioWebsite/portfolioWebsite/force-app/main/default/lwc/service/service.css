@@ -1,0 +1,44 @@
+.serviceList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.container{
+    padding: 10px 10px;
+  }
+  .serviceList div {
+    background: #262626;
+    padding: 40px;
+    border-radius: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: background 0.5s,transform 0.5s;
+    border-color: #4e1119;
+    border-style: groove;
+  }
+  .serviceList div h2{
+font-size: 30px;
+font-weight: 500;
+margin-bottom: 15px;  
+}
+.serviceList div p{
+  font-weight: 100;
+}
+serviceList div a ac{
+    text-decoration: none;
+}
+.serviceList div:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+.subTitle{
+    font-size: 41px;
+    font-weight: 600;
+    text-align: left;
+
+}
+.slds-button.slds-button_icon{
+  border-style:none;
+}

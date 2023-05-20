@@ -1,0 +1,19 @@
+.header{
+    margin-top: 20%;
+    font-size: 26px;
+    position: absolute;
+    top: 28px;
+    left: 12px;
+}
+.header h1{
+  font-size: 60px;
+  margin-top: 20px;
+  font-weight: inherit;
+  font-size: 2em;
+  font-family: -webkit-body;
+}
+.header h1 span{
+  color: hsl(340, 53%, 16%);
+  font-size: 58px;
+  font-family: math;
+}
